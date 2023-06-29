@@ -23,8 +23,8 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
     base: viteEnv.VITE_PUBLIC_PATH,
     resolve: {
       alias: {
-        "@": resolve(__dirname, "./src"),
-        "vue-i18n": "vue-i18n/dist/vue-i18n.cjs.js"
+        "@": resolve(__dirname, "./src")
+        // "vue-i18n": "vue-i18n/dist/vue-i18n.cjs.js"
       }
     },
     define: {
