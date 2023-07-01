@@ -26,6 +26,8 @@ import * as Icons from "@element-plus/icons-vue";
 import errorHandler from "@/utils/errorHandler";
 // custom directives
 import directives from "@/directives";
+// vue Router
+import router from "@/routers";
 // vue i18n
 import I18n from "@/languages";
 // pinia store
@@ -39,4 +41,4 @@ Object.keys(Icons).forEach(key => {
   app.component(key, Icons[key as keyof typeof Icons]);
 });
 
-app.use(ElementPlus).use(directives).use(I18n).use(pinia).mount("#app");
+app.use(ElementPlus).use(directives).use(router).use(I18n).use(pinia).mount("#app");
