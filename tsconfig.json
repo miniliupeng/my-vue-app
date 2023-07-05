@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ESNext",
     "useDefineForClassFields": true,
     "module": "ESNext",
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
-
+    "esModuleInterop": true,
     /* Bundler mode */
     "moduleResolution": "Node",
     "allowImportingTsExtensions": true,
@@ -21,7 +21,7 @@
     "noFallthroughCasesInSwitch": true,
 
     "allowSyntheticDefaultImports": true,
-    "types": ["vite/client", "element-plus/global.d.ts"],
+    "types": ["vite/client", "element-plus/global.d.ts", "node"],
     "baseUrl": "./",
     "paths": {
       "@": ["src"],
